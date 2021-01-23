@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.list ol{
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+ul{
+    list-style-image: url(./Love.png);
+    list-style-position: inside;
+ 
+}
+.manubar{}
+.manubar ul{
+    text-align: center;
+
+    background: cornflowerblue;
+}
+.manubar ul li{
+    display: inline-block;
+   margin-left: -4px;
+}
+.manubar ul li a {
+	text-decoration: none;
+	color: aliceblue;
+    border-right: 1px solid aqua;
+    padding: 10px 40px;
+    display: inline-block;
+}
+.manubar ul li:first-child a{
+    border-left: 1px solid aqua;
+}
+.manubar ul li:hover > a{
+    background-color: green;
+}
+/* .manubar ul li:nth-child(2) ul li{
+    background-color: green;
+} */
+/*Dropdawon*/
+.manubar ul li{
+    position: relative;
+}
+.manubar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 268px;
+    top: 100%;
+    background-color: rgb(145, 172, 190);
+    border-top: 1px solid  aquamarine;
+
+    transition: .4s;
+}
+.manubar ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.manubar ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid aquamarine;
+}
+.manubar ul li ul li:first-child a{
+    border-left:  none;
+}
+/* Hover part */
+ .manubar ul li ul{
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scalex(0);
+    transform-origin: top center;
+}
+ .manubar ul li:hover ul{
+    transform: scalex(1);
+    opacity: 1;
+    visibility: visible;
+}
+.manubar ul li ul li a:hover{
+    background-color: rgb(113, 80, 221);
+}
+/* socyal-icon */
+
+.socyal-icon ul{
+    background-color: rgb(80, 82, 80);
+    text-align: center;
+    margin: 30px;
+}
+.socyal-icon ul li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 14px;
+	font-size: 38px;
+	 
+}
+.socyal-icon ul li a {
+	color: #cac6ce;
+	background-color: #02a46e;
+	border-radius: 50%;
+	/*! padding: 6px 15px; */
+    display: block;
+    height: 100px;
+width: 100px;
+text-align: center;
+line-height: 100px;
+	 
+	/*! margin-right: 4px; */
+	/*! margin-top: 5px; */
+}
+.socyal-icon ul li a:hover{
+    background-color: rgb(25, 247, 235);
+}
